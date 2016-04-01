@@ -17,7 +17,7 @@ var message = {
 device.on('connect', function() {
   console.log('Connected!');
   setTimeout(function() {
-    device.publish('thingtestTopic', JSON.stringify(message));
+    device.publish('PubSubToAnyTopic', JSON.stringify(message));
     console.log('Pushed message to Topic...');
     console.log('Success!');
     process.exit();
