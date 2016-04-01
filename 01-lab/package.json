@@ -1,0 +1,15 @@
+{
+  "name": "01-lab",
+  "version": "1.0.0",
+  "description": "aws-iot lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sahays@",
+  "license": "ISC",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.11",
+    "aws-sdk": "^2.3.0"
+  }
+}
