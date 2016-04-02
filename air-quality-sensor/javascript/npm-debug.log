@@ -1,0 +1,594 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData mraa
+20 silly mapToRegistry name mraa
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'mraa',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   name: 'mraa',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/mraa
+25 verbose request uri https://registry.npmjs.org/mraa
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 9:22:06 AM
+28 verbose request id 642f2798a3fdbe75
+29 verbose etag "B7TLT1NIN2QSAB132NN2XEQIU"
+30 http request GET https://registry.npmjs.org/mraa
+31 http 304 https://registry.npmjs.org/mraa
+32 verbose headers { date: 'Sat, 02 Apr 2016 03:52:03 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   etag: '"B7TLT1NIN2QSAB132NN2XEQIU"',
+32 verbose headers   age: '35',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+32 verbose headers   'x-cache': 'HIT',
+32 verbose headers   'x-cache-hits': '1',
+32 verbose headers   'x-timer': 'S1459569123.970302,VS0,VE0',
+32 verbose headers   vary: 'Accept' }
+33 silly get cb [ 304,
+33 silly get   { date: 'Sat, 02 Apr 2016 03:52:03 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     'cache-control': 'max-age=300',
+33 silly get     etag: '"B7TLT1NIN2QSAB132NN2XEQIU"',
+33 silly get     age: '35',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-sin6927-SIN',
+33 silly get     'x-cache': 'HIT',
+33 silly get     'x-cache-hits': '1',
+33 silly get     'x-timer': 'S1459569123.970302,VS0,VE0',
+33 silly get     vary: 'Accept' } ]
+34 verbose etag https://registry.npmjs.org/mraa from cache
+35 verbose get saving mraa to /Users/sahays/.npm/registry.npmjs.org/mraa/.cache.json
+36 verbose correctMkdir /Users/sahays/.npm correctMkdir not in flight; initializing
+37 silly resolveWithNewModule mraa@0.7.5 checking installable status
+38 silly cache add args [ 'mraa@^0.7.3', null ]
+39 verbose cache add spec mraa@^0.7.3
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'mraa@^0.7.3',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'mraa',
+40 silly cache add   rawSpec: '^0.7.3',
+40 silly cache add   spec: '>=0.7.3 <0.8.0',
+40 silly cache add   type: 'range' }
+41 silly addNamed mraa@>=0.7.3 <0.8.0
+42 verbose addNamed ">=0.7.3 <0.8.0" is a valid semver range for mraa
+43 silly addNameRange { name: 'mraa', range: '>=0.7.3 <0.8.0', hasData: false }
+44 silly mapToRegistry name mraa
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'mraa',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   name: 'mraa',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/mraa
+49 verbose addNameRange registry:https://registry.npmjs.org/mraa not in flight; fetching
+50 verbose get https://registry.npmjs.org/mraa not expired, no request
+51 silly addNameRange number 2 { name: 'mraa', range: '>=0.7.3 <0.8.0', hasData: true }
+52 silly addNameRange versions [ 'mraa',
+52 silly addNameRange   [ '0.5.2-46-gd4552fd',
+52 silly addNameRange     '0.5.2-47-ga38c07f',
+52 silly addNameRange     '0.5.2-48-g0ca4b10',
+52 silly addNameRange     '0.5.2-49-gabd538d',
+52 silly addNameRange     '0.5.2-50-g8be861a',
+52 silly addNameRange     '0.5.2-51-g276b0a8',
+52 silly addNameRange     '0.5.2-62-g0289c63',
+52 silly addNameRange     '0.5.2-63-gd1185ef',
+52 silly addNameRange     '0.5.3',
+52 silly addNameRange     '0.5.3-2-g9684915',
+52 silly addNameRange     '0.5.3-3-g36e24ba',
+52 silly addNameRange     '0.5.3-4-g14f4567',
+52 silly addNameRange     '0.5.3-5-g1b059c1',
+52 silly addNameRange     '0.5.3-6-g7ad78d0',
+52 silly addNameRange     '0.5.3-7-gacc3476',
+52 silly addNameRange     '0.5.4',
+52 silly addNameRange     '0.5.4-2-g8aa2ccc',
+52 silly addNameRange     '0.5.4-1-ged1fc6c',
+52 silly addNameRange     '0.5.4-2-gffdd828',
+52 silly addNameRange     '0.5.4-5-g1ee0548',
+52 silly addNameRange     '0.5.4-6-gcf1a864',
+52 silly addNameRange     '0.5.4-14-gaff8811',
+52 silly addNameRange     '0.5.4-20-g82eee9b',
+52 silly addNameRange     '0.5.4-21-g71913b9',
+52 silly addNameRange     '0.5.4-22-gbd16ecc',
+52 silly addNameRange     '0.5.4-24-g2c5e749',
+52 silly addNameRange     '0.5.4-25-g0c086d8',
+52 silly addNameRange     '0.5.4-26-gda15fdb',
+52 silly addNameRange     '0.5.4-27-g643bb99',
+52 silly addNameRange     '0.5.4-28-g4944f42',
+52 silly addNameRange     '0.5.4-29-gf277e7d',
+52 silly addNameRange     '0.5.4-30-gf6a05b1',
+52 silly addNameRange     '0.5.4-31-gf7256f1',
+52 silly addNameRange     '0.5.4-32-g71118af',
+52 silly addNameRange     '0.5.4-34-g4d8b82e',
+52 silly addNameRange     '0.5.4-36-ge5835fa',
+52 silly addNameRange     '0.5.4-37-g3c4742c',
+52 silly addNameRange     '0.5.4-38-gd58adef',
+52 silly addNameRange     '0.5.4-41-g2574efd',
+52 silly addNameRange     '0.5.4-42-ge7649db',
+52 silly addNameRange     '0.5.4-45-gbc05ce7',
+52 silly addNameRange     '0.5.4-46-g74d172c',
+52 silly addNameRange     '0.5.4-63-gec5c09f',
+52 silly addNameRange     '0.5.4-64-g3efb7a0',
+52 silly addNameRange     '0.5.4-65-ga76061a',
+52 silly addNameRange     '0.5.4-66-g44d6ebf',
+52 silly addNameRange     '0.5.4-66-g62c3264',
+52 silly addNameRange     '0.5.4-71-g17ee0c9',
+52 silly addNameRange     '0.5.4-76-g5af1197',
+52 silly addNameRange     '0.5.4-78-g21962f4',
+52 silly addNameRange     '0.5.4-79-gc3e43e5',
+52 silly addNameRange     '0.5.4-80-g50ca84b',
+52 silly addNameRange     '0.5.4-81-g5daad72',
+52 silly addNameRange     '0.5.4-82-g66eb476',
+52 silly addNameRange     '0.5.4-83-g20d2291',
+52 silly addNameRange     '0.5.4-84-ged4c68e',
+52 silly addNameRange     '0.5.4-85-g9cfbc87',
+52 silly addNameRange     '0.5.4-86-g97d5a3e',
+52 silly addNameRange     '0.5.4-88-g4e59917',
+52 silly addNameRange     '0.5.4-89-gc3980c2',
+52 silly addNameRange     '0.5.4-90-ge23325d',
+52 silly addNameRange     '0.5.4-91-g456646c',
+52 silly addNameRange     '0.5.4-92-g067487f',
+52 silly addNameRange     '0.5.4-94-ge8bc227',
+52 silly addNameRange     '0.5.4-95-gfb54307',
+52 silly addNameRange     '0.5.4-96-g94dd44a',
+52 silly addNameRange     '0.5.4-97-g212be29',
+52 silly addNameRange     '0.5.4-98-gd88da13',
+52 silly addNameRange     '0.5.4-100-g6c73a8a',
+52 silly addNameRange     '0.5.4-101-g82bb1c5',
+52 silly addNameRange     '0.5.4-102-ge68546a',
+52 silly addNameRange     '0.5.4-103-g4d81fec',
+52 silly addNameRange     '0.5.4-104-g019b0a5',
+52 silly addNameRange     '0.5.4-105-gbaa1a0a',
+52 silly addNameRange     '0.5.4-106-gdbc64fb',
+52 silly addNameRange     '0.5.4-107-gcd6701d',
+52 silly addNameRange     '0.5.4-108-ge7c3c17',
+52 silly addNameRange     '0.5.4-109-g8ccefe9',
+52 silly addNameRange     '0.5.4-110-g459ecc0',
+52 silly addNameRange     '0.5.4-112-g2dc79dd',
+52 silly addNameRange     '0.5.4-115-g403424e',
+52 silly addNameRange     '0.5.4-118-g818e1a8',
+52 silly addNameRange     '0.5.4-121-g2965665',
+52 silly addNameRange     '0.5.4-126-g989566b',
+52 silly addNameRange     '0.5.4-127-gcd36880',
+52 silly addNameRange     '0.5.4-134-gd6891e8',
+52 silly addNameRange     '0.5.4-135-gdd80730',
+52 silly addNameRange     '0.5.4-137-g9d80b12',
+52 silly addNameRange     '0.5.4-138-g163a40e',
+52 silly addNameRange     '0.5.4-139-gefdbf4b',
+52 silly addNameRange     '0.5.4-140-g797b137',
+52 silly addNameRange     '0.5.4-141-ga2220e3',
+52 silly addNameRange     '0.6.1',
+52 silly addNameRange     '0.6.1-2-ga747c80',
+52 silly addNameRange     '0.6.1-5-g3b3b940',
+52 silly addNameRange     '0.6.1-6-g10f450b',
+52 silly addNameRange     '0.6.1-7-g76ffa35',
+52 silly addNameRange     '0.6.1-8-g2c74ba7',
+52 silly addNameRange     '0.6.1-9-g677af12',
+52 silly addNameRange     '0.6.1-10-gf33880c',
+52 silly addNameRange     '0.6.1-11-g7375146',
+52 silly addNameRange     '0.6.1-12-gf854a2b',
+52 silly addNameRange     '0.6.1-14-g0dd0395',
+52 silly addNameRange     '0.6.1-15-g228b7b6',
+52 silly addNameRange     '0.6.1-16-gc621fad',
+52 silly addNameRange     '0.6.1-17-g805d22f',
+52 silly addNameRange     '0.6.1-18-g62213fa',
+52 silly addNameRange     '0.6.1-21-g8b0b9f1',
+52 silly addNameRange     '0.6.1-22-ge03eec3',
+52 silly addNameRange     '0.6.1-31-g2174ee1',
+52 silly addNameRange     '0.6.1-32-gffcf3d7',
+52 silly addNameRange     '0.6.1-33-g2388fb9',
+52 silly addNameRange     '0.6.1-34-g52c5376',
+52 silly addNameRange     '0.6.1-36-gbe4312e',
+52 silly addNameRange     '0.6.2',
+52 silly addNameRange     '0.7.0',
+52 silly addNameRange     '0.7.1',
+52 silly addNameRange     '0.7.2',
+52 silly addNameRange     '0.7.3',
+52 silly addNameRange     '0.7.4',
+52 silly addNameRange     '0.7.5',
+52 silly addNameRange     '0.8.0',
+52 silly addNameRange     '0.8.1',
+52 silly addNameRange     '0.9.0',
+52 silly addNameRange     '0.9.1',
+52 silly addNameRange     '0.9.2',
+52 silly addNameRange     '0.9.3',
+52 silly addNameRange     '0.9.4',
+52 silly addNameRange     '0.9.5',
+52 silly addNameRange     '0.9.6',
+52 silly addNameRange     '0.10.0',
+52 silly addNameRange     '0.10.1' ] ]
+53 silly addNamed mraa@0.7.5
+54 verbose addNamed "0.7.5" is a plain semver version for mraa
+55 silly cache afterAdd mraa@0.7.5
+56 verbose afterAdd /Users/sahays/.npm/mraa/0.7.5/package/package.json not in flight; writing
+57 verbose correctMkdir /Users/sahays/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /Users/sahays/.npm/mraa/0.7.5/package/package.json written
+59 silly loadAllDepsIntoIdealTree Finishing
+60 silly idealTree:prePrune air-quality-sensor@
+60 silly idealTree:prePrune ├── async@1.5.2
+60 silly idealTree:prePrune ├── combined-stream@1.0.5
+60 silly idealTree:prePrune ├── component-emitter@1.2.0
+60 silly idealTree:prePrune ├── cookiejar@2.0.6
+60 silly idealTree:prePrune ├── core-util-is@1.0.2
+60 silly idealTree:prePrune ├── debug@2.2.0
+60 silly idealTree:prePrune ├── delayed-stream@1.0.0
+60 silly idealTree:prePrune ├── extend@3.0.0
+60 silly idealTree:prePrune ├── form-data@1.0.0-rc3
+60 silly idealTree:prePrune ├── formidable@1.0.17
+60 silly idealTree:prePrune ├── inherits@2.0.1
+60 silly idealTree:prePrune ├── isarray@0.0.1
+60 silly idealTree:prePrune ├── methods@1.1.2
+60 silly idealTree:prePrune ├── mime-db@1.22.0
+60 silly idealTree:prePrune ├── mime-types@2.1.10
+60 silly idealTree:prePrune ├── mime@1.3.4
+60 silly idealTree:prePrune ├── mraa@0.7.5
+60 silly idealTree:prePrune ├── ms@0.7.1
+60 silly idealTree:prePrune ├── qs@2.3.3
+60 silly idealTree:prePrune ├── readable-stream@1.0.27-1
+60 silly idealTree:prePrune ├── reduce-component@1.0.1
+60 silly idealTree:prePrune ├── string_decoder@0.10.31
+60 silly idealTree:prePrune └── superagent@1.8.3
+61 silly loadIdealTree Finishing
+62 silly currentTree air-quality-sensor@
+62 silly currentTree ├── async@1.5.2
+62 silly currentTree ├── combined-stream@1.0.5
+62 silly currentTree ├── component-emitter@1.2.0
+62 silly currentTree ├── cookiejar@2.0.6
+62 silly currentTree ├── core-util-is@1.0.2
+62 silly currentTree ├── debug@2.2.0
+62 silly currentTree ├── delayed-stream@1.0.0
+62 silly currentTree ├── extend@3.0.0
+62 silly currentTree ├── form-data@1.0.0-rc3
+62 silly currentTree ├── formidable@1.0.17
+62 silly currentTree ├── inherits@2.0.1
+62 silly currentTree ├── isarray@0.0.1
+62 silly currentTree ├── methods@1.1.2
+62 silly currentTree ├── mime-db@1.22.0
+62 silly currentTree ├── mime-types@2.1.10
+62 silly currentTree ├── mime@1.3.4
+62 silly currentTree ├── ms@0.7.1
+62 silly currentTree ├── qs@2.3.3
+62 silly currentTree ├── readable-stream@1.0.27-1
+62 silly currentTree ├── reduce-component@1.0.1
+62 silly currentTree ├── string_decoder@0.10.31
+62 silly currentTree └── superagent@1.8.3
+63 silly idealTree air-quality-sensor@
+63 silly idealTree ├── async@1.5.2
+63 silly idealTree ├── combined-stream@1.0.5
+63 silly idealTree ├── component-emitter@1.2.0
+63 silly idealTree ├── cookiejar@2.0.6
+63 silly idealTree ├── core-util-is@1.0.2
+63 silly idealTree ├── debug@2.2.0
+63 silly idealTree ├── delayed-stream@1.0.0
+63 silly idealTree ├── extend@3.0.0
+63 silly idealTree ├── form-data@1.0.0-rc3
+63 silly idealTree ├── formidable@1.0.17
+63 silly idealTree ├── inherits@2.0.1
+63 silly idealTree ├── isarray@0.0.1
+63 silly idealTree ├── methods@1.1.2
+63 silly idealTree ├── mime-db@1.22.0
+63 silly idealTree ├── mime-types@2.1.10
+63 silly idealTree ├── mime@1.3.4
+63 silly idealTree ├── mraa@0.7.5
+63 silly idealTree ├── ms@0.7.1
+63 silly idealTree ├── qs@2.3.3
+63 silly idealTree ├── readable-stream@1.0.27-1
+63 silly idealTree ├── reduce-component@1.0.1
+63 silly idealTree ├── string_decoder@0.10.31
+63 silly idealTree └── superagent@1.8.3
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 silly generateActionsToTake Finishing
+67 silly diffTrees action count 1
+68 silly diffTrees add mraa@0.7.5
+69 silly decomposeActions action count 8
+70 silly decomposeActions fetch mraa@0.7.5
+71 silly decomposeActions extract mraa@0.7.5
+72 silly decomposeActions test mraa@0.7.5
+73 silly decomposeActions preinstall mraa@0.7.5
+74 silly decomposeActions build mraa@0.7.5
+75 silly decomposeActions install mraa@0.7.5
+76 silly decomposeActions postinstall mraa@0.7.5
+77 silly decomposeActions finalize mraa@0.7.5
+78 silly executeActions Starting
+79 silly install executeActions
+80 silly doSerial global-install 0
+81 silly doParallel fetch 1
+82 verbose correctMkdir /Users/sahays/.npm/_locks correctMkdir not in flight; initializing
+83 verbose lock using /Users/sahays/.npm/_locks/staging-4d1457b8581dabf9.lock for /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging
+84 silly doParallel extract 1
+85 silly extract mraa@0.7.5
+86 verbose unbuild node_modules/.staging/mraa-adc5ce06
+87 silly gentlyRm /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06 is being purged from base /Users/sahays/how-to-code-samples/air-quality-sensor/javascript
+88 verbose gentlyRm don't care about contents; nuking /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06
+89 verbose tar unpack /Users/sahays/.npm/mraa/0.7.5/package.tgz
+90 verbose tar unpacking to /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06
+91 silly gentlyRm /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06 is being purged
+92 verbose gentlyRm don't care about contents; nuking /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry
+95 silly gunzTarPerm extractEntry .clang-format
+96 silly gunzTarPerm extractEntry src/
+97 silly gunzTarPerm extractEntry src/version.c
+98 silly gunzTarPerm extractEntry src/uart/
+99 silly gunzTarPerm extractEntry src/uart/uart.c
+100 silly gunzTarPerm extractEntry src/doxy2swig.py
+101 silly gunzTarPerm extractEntry src/gpio/
+102 silly gunzTarPerm extractEntry src/gpio/gpio.c
+103 silly gunzTarPerm extractEntry src/mraa.i
+104 silly gunzTarPerm extractEntry src/aio/
+105 silly gunzTarPerm extractEntry src/aio/aio.c
+106 silly gunzTarPerm extractEntry src/arm/
+107 silly gunzTarPerm extractEntry src/arm/beaglebone.c
+108 silly gunzTarPerm extractEntry src/arm/raspberry_pi.c
+109 silly gunzTarPerm extractEntry src/arm/CMakeLists.txt
+110 silly gunzTarPerm extractEntry src/arm/arm.c
+111 silly gunzTarPerm extractEntry src/arm/banana.c
+112 silly gunzTarPerm extractEntry src/i2c/
+113 silly gunzTarPerm extractEntry src/i2c/LICENSE
+114 silly gunzTarPerm extractEntry src/i2c/i2c.c
+115 silly gunzTarPerm extractEntry src/python/
+116 silly gunzTarPerm extractEntry src/python/mraa.i
+117 silly gunzTarPerm extractEntry src/python/docs/
+118 silly gunzTarPerm extractEntry src/python/docs/example.rst
+119 silly gunzTarPerm extractEntry src/python/docs/mraa.rst
+120 silly gunzTarPerm extractEntry src/python/docs/conf.py.in
+121 silly gunzTarPerm extractEntry src/python/docs/index.rst
+122 silly gunzTarPerm extractEntry src/python/docs/CMakeLists.txt
+123 silly gunzTarPerm extractEntry src/python/CMakeLists.txt
+124 silly gunzTarPerm extractEntry src/x86/
+125 silly gunzTarPerm extractEntry src/x86/intel_minnow_max.c
+126 silly gunzTarPerm extractEntry src/x86/intel_galileo_rev_g.c
+127 silly gunzTarPerm extractEntry src/x86/intel_galileo_rev_d.c
+128 silly gunzTarPerm extractEntry src/x86/intel_de3815.c
+129 silly gunzTarPerm extractEntry src/x86/CMakeLists.txt
+130 silly gunzTarPerm extractEntry src/x86/intel_nuc5.c
+131 silly gunzTarPerm extractEntry src/x86/intel_edison_fab_c.c
+132 silly gunzTarPerm extractEntry src/x86/x86.c
+133 silly gunzTarPerm extractEntry src/javascript/
+134 silly gunzTarPerm extractEntry src/javascript/mraajs.i
+135 silly gunzTarPerm extractEntry src/javascript/doxygen2jsdoc_custom.json
+136 silly gunzTarPerm extractEntry src/javascript/CMakeLists.txt
+137 silly gunzTarPerm extractEntry src/javascript/binding.gyp.cmake
+138 silly gunzTarPerm extractEntry src/javascript/package.json.cmake
+139 silly gunzTarPerm extractEntry src/java/
+140 silly gunzTarPerm extractEntry src/java/CMakeLists.txt
+141 silly gunzTarPerm extractEntry src/java/mraajava.i
+142 silly gunzTarPerm extractEntry src/spi/
+143 silly gunzTarPerm extractEntry src/spi/spi.c
+144 silly gunzTarPerm extractEntry src/pwm/
+145 silly gunzTarPerm extractEntry src/pwm/pwm.c
+146 silly gunzTarPerm extractEntry src/CMakeLists.txt
+147 silly gunzTarPerm extractEntry src/mraajsJAVASCRIPT_wrap.cxx
+148 silly gunzTarPerm extractEntry src/mraa.c
+149 silly gunzTarPerm extractEntry src/mraa.pc.cmake
+150 silly gunzTarPerm extractEntry examples/
+151 silly gunzTarPerm extractEntry examples/hellomraa.c
+152 silly gunzTarPerm extractEntry examples/analogin_a0.c
+153 silly gunzTarPerm extractEntry examples/blink-io.c
+154 silly gunzTarPerm extractEntry examples/mmap-io2.c
+155 silly gunzTarPerm extractEntry examples/python/
+156 silly gunzTarPerm extractEntry examples/python/blink-io8.py
+157 silly gunzTarPerm extractEntry examples/python/rgblcd.py
+158 silly gunzTarPerm extractEntry examples/python/hello_isr.py
+159 silly gunzTarPerm extractEntry examples/python/cycle-pwm3.py
+160 silly gunzTarPerm extractEntry examples/python/spi.py
+161 silly gunzTarPerm extractEntry examples/python/uart.py
+162 silly gunzTarPerm extractEntry examples/python/aio.py
+163 silly gunzTarPerm extractEntry examples/python/bmp85.py
+164 silly gunzTarPerm extractEntry examples/python/hello_gpio.py
+165 silly gunzTarPerm extractEntry examples/javascript/
+166 silly gunzTarPerm extractEntry examples/javascript/spi.js
+167 silly gunzTarPerm extractEntry examples/javascript/bmp85.js
+168 silly gunzTarPerm extractEntry examples/javascript/rgblcd.js
+169 silly gunzTarPerm extractEntry examples/javascript/GPIO_DigitalWrite.js
+170 silly gunzTarPerm extractEntry examples/javascript/isr.js
+171 silly gunzTarPerm extractEntry examples/javascript/Blink-IO.js
+172 silly gunzTarPerm extractEntry examples/javascript/GPIO_DigitalRead.js
+173 silly gunzTarPerm extractEntry examples/javascript/AioA0.js
+174 silly gunzTarPerm extractEntry examples/javascript/uart.js
+175 silly gunzTarPerm extractEntry examples/uart.c
+176 silly gunzTarPerm extractEntry examples/mraa-gpio.c
+177 silly gunzTarPerm extractEntry examples/java/
+178 silly gunzTarPerm extractEntry examples/java/Isr.java
+179 silly gunzTarPerm extractEntry examples/java/Bmp85.java
+180 silly gunzTarPerm extractEntry examples/java/BlinkOnboard.java
+181 silly gunzTarPerm extractEntry examples/java/GpioRead6.java
+182 silly gunzTarPerm extractEntry examples/java/CyclePwm3.java
+183 silly gunzTarPerm extractEntry examples/java/Example.java
+184 silly gunzTarPerm extractEntry examples/cycle-pwm3.c
+185 silly gunzTarPerm extractEntry examples/gpio_read6.c
+186 silly gunzTarPerm extractEntry examples/i2c_HMC5883L.c
+187 silly gunzTarPerm extractEntry examples/c++/
+188 silly gunzTarPerm extractEntry examples/c++/Pwm3-cycle.cpp
+189 silly gunzTarPerm extractEntry examples/c++/Uart-example.cpp
+190 silly gunzTarPerm extractEntry examples/c++/I2c-compass.cpp
+191 silly gunzTarPerm extractEntry examples/c++/Spi-pot.cpp
+192 silly gunzTarPerm extractEntry examples/c++/AioA0.cpp
+193 silly gunzTarPerm extractEntry examples/c++/CMakeLists.txt
+194 silly gunzTarPerm extractEntry examples/c++/Blink-IO.cpp
+195 silly gunzTarPerm extractEntry examples/CMakeLists.txt
+196 silly gunzTarPerm extractEntry examples/blink_onboard.c
+197 silly gunzTarPerm extractEntry examples/spi_max7219.c
+198 silly gunzTarPerm extractEntry examples/helloedison.c
+199 silly gunzTarPerm extractEntry examples/isr_pin6.c
+200 silly gunzTarPerm extractEntry examples/spi_mcp4261.c
+201 silly gunzTarPerm extractEntry cmake/
+202 silly gunzTarPerm extractEntry cmake/Toolchains/
+203 silly gunzTarPerm extractEntry cmake/Toolchains/oe-sdk_cross.cmake
+204 silly gunzTarPerm extractEntry cmake/modules/
+205 silly gunzTarPerm extractEntry cmake/modules/TargetArch.cmake
+206 silly gunzTarPerm extractEntry cmake/modules/GetGitRevisionDescription.cmake.in
+207 silly gunzTarPerm extractEntry cmake/modules/LICENSE_1_0.txt
+208 silly gunzTarPerm extractEntry cmake/modules/version.c.in
+209 silly gunzTarPerm extractEntry cmake/modules/CPackDeb.cmake
+210 silly gunzTarPerm extractEntry cmake/modules/FindSphinx.cmake
+211 silly gunzTarPerm extractEntry cmake/modules/LICENSE.LGPL
+212 silly gunzTarPerm extractEntry cmake/modules/Copyright.txt
+213 silly gunzTarPerm extractEntry cmake/modules/FindNodejs.cmake
+214 silly gunzTarPerm extractEntry cmake/modules/GetGitRevisionDescription.cmake
+215 silly gunzTarPerm extractEntry cmake/modules/FindYuidoc.cmake
+216 silly gunzTarPerm extractEntry READMEFIRST
+217 silly gunzTarPerm extractEntry tests/
+218 silly gunzTarPerm extractEntry tests/CMakeLists.txt
+219 silly gunzTarPerm extractEntry tests/general_checks.py
+220 silly gunzTarPerm extractEntry tests/gpio_checks.py
+221 silly gunzTarPerm extractEntry tests/platform_checks.py
+222 silly gunzTarPerm extractEntry package.json
+223 silly gunzTarPerm extractEntry COPYING
+224 silly gunzTarPerm extractEntry binding.gyp
+225 silly gunzTarPerm extractEntry doxygen2jsdoc/
+226 silly gunzTarPerm extractEntry .travis.yml
+227 silly gunzTarPerm extractEntry DoxygenLayout.xml
+228 silly gunzTarPerm extractEntry README.md
+229 silly gunzTarPerm extractEntry api/
+230 silly gunzTarPerm extractEntry api/mraa/
+231 silly gunzTarPerm extractEntry api/mraa/types.h
+232 silly gunzTarPerm extractEntry api/mraa/aio.hpp
+233 silly gunzTarPerm extractEntry api/mraa/spi.hpp
+234 silly gunzTarPerm extractEntry api/mraa/gpio.h
+235 silly gunzTarPerm extractEntry api/mraa/gpio.hpp
+236 silly gunzTarPerm extractEntry api/mraa/aio.h
+237 silly gunzTarPerm extractEntry api/mraa/uart.hpp
+238 silly gunzTarPerm extractEntry api/mraa/common.hpp
+239 silly gunzTarPerm extractEntry api/mraa/i2c.h
+240 silly gunzTarPerm extractEntry api/mraa/pwm.h
+241 silly gunzTarPerm extractEntry api/mraa/spi.h
+242 silly gunzTarPerm extractEntry api/mraa/i2c.hpp
+243 silly gunzTarPerm extractEntry api/mraa/common.h
+244 silly gunzTarPerm extractEntry api/mraa/uart.h
+245 silly gunzTarPerm extractEntry api/mraa/pwm.hpp
+246 silly gunzTarPerm extractEntry api/mraa.h
+247 silly gunzTarPerm extractEntry api/mraa.hpp
+248 silly gunzTarPerm extractEntry docs/
+249 silly gunzTarPerm extractEntry docs/edison.md
+250 silly gunzTarPerm extractEntry docs/testing.md
+251 silly gunzTarPerm extractEntry docs/index.md
+252 silly gunzTarPerm extractEntry docs/i2c.txt
+253 silly gunzTarPerm extractEntry docs/beaglebone.md
+254 silly gunzTarPerm extractEntry docs/raspberry_pi.md
+255 silly gunzTarPerm extractEntry docs/galileorevd.md
+256 silly gunzTarPerm extractEntry docs/internals.md
+257 silly gunzTarPerm extractEntry docs/minnow_max.md
+258 silly gunzTarPerm extractEntry docs/platform-hooks.md
+259 silly gunzTarPerm extractEntry docs/galileorevh.md
+260 silly gunzTarPerm extractEntry docs/contributing.md
+261 silly gunzTarPerm extractEntry docs/intel_nuc5.md
+262 silly gunzTarPerm extractEntry docs/intel_de3815.md
+263 silly gunzTarPerm extractEntry docs/banana_pi.md
+264 silly gunzTarPerm extractEntry docs/npm.md
+265 silly gunzTarPerm extractEntry docs/debugging.md
+266 silly gunzTarPerm extractEntry Doxyfile.in
+267 silly gunzTarPerm extractEntry CMakeLists.txt
+268 silly gunzTarPerm extractEntry include/
+269 silly gunzTarPerm extractEntry include/arm/
+270 silly gunzTarPerm extractEntry include/arm/banana.h
+271 silly gunzTarPerm extractEntry include/arm/raspberry_pi.h
+272 silly gunzTarPerm extractEntry include/arm/beaglebone.h
+273 silly gunzTarPerm extractEntry include/linux/
+274 silly gunzTarPerm extractEntry include/linux/i2c-dev.h
+275 silly gunzTarPerm extractEntry include/linux/types.h
+276 silly gunzTarPerm extractEntry include/linux/posix_types.h
+277 silly gunzTarPerm extractEntry include/linux/README
+278 silly gunzTarPerm extractEntry include/linux/compiler.h
+279 silly gunzTarPerm extractEntry include/x86/
+280 silly gunzTarPerm extractEntry include/x86/intel_de3815.h
+281 silly gunzTarPerm extractEntry include/x86/intel_nuc5.h
+282 silly gunzTarPerm extractEntry include/x86/intel_minnow_max.h
+283 silly gunzTarPerm extractEntry include/x86/intel_galileo_rev_g.h
+284 silly gunzTarPerm extractEntry include/x86/intel_galileo_rev_d.h
+285 silly gunzTarPerm extractEntry include/x86/intel_edison_fab_c.h
+286 silly gunzTarPerm extractEntry include/mraa_adv_func.h
+287 silly gunzTarPerm extractEntry include/mraa_internal.h
+288 silly gunzTarPerm extractEntry include/mraa_internal_types.h
+289 silly gunzTarPerm extractEntry include/version.h
+290 silly gunzTarPerm extractEntry .gitmodules
+291 silly gentlyRm /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06/node_modules is being purged
+292 verbose gentlyRm don't care about contents; nuking /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06/node_modules
+293 silly doParallel preinstall 1
+294 silly preinstall mraa@0.7.5 /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06
+295 info lifecycle mraa@0.7.5~preinstall: mraa@0.7.5
+296 silly lifecycle mraa@0.7.5~preinstall: no script for preinstall, continuing
+297 silly doReverseSerial remove 0
+298 silly doSerial move 0
+299 silly doSerial finalize 1
+300 silly finalize /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/mraa
+301 silly doSerial build 1
+302 silly build mraa@0.7.5
+303 info linkStuff mraa@0.7.5
+304 silly linkStuff mraa@0.7.5 has /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules as its parent node_modules
+305 verbose linkBins mraa@0.7.5
+306 verbose linkMans mraa@0.7.5
+307 silly doSerial global-link 0
+308 silly doParallel update-linked 0
+309 silly doSerial install 1
+310 silly install mraa@0.7.5 /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging/mraa-adc5ce06
+311 info lifecycle mraa@0.7.5~install: mraa@0.7.5
+312 verbose lifecycle mraa@0.7.5~install: unsafe-perm in lifecycle false
+313 verbose lifecycle mraa@0.7.5~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/mraa/node_modules/.bin:/Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+314 verbose lifecycle mraa@0.7.5~install: CWD: /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/mraa
+315 silly lifecycle mraa@0.7.5~install: Args: [ '-c', 'node-gyp rebuild' ]
+316 silly lifecycle mraa@0.7.5~install: Returned: code: 1  signal: null
+317 info lifecycle mraa@0.7.5~install: Failed to exec install script
+318 verbose unlock done using /Users/sahays/.npm/_locks/staging-4d1457b8581dabf9.lock for /Users/sahays/how-to-code-samples/air-quality-sensor/javascript/node_modules/.staging
+319 silly rollbackFailedOptional Starting
+320 silly rollbackFailedOptional Finishing
+321 silly runTopLevelLifecycles Starting
+322 silly runTopLevelLifecycles Finishing
+323 silly install printInstalled
+324 verbose stack Error: mraa@0.7.5 install: `node-gyp rebuild`
+324 verbose stack Exit status 1
+324 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+324 verbose stack     at emitTwo (events.js:100:13)
+324 verbose stack     at EventEmitter.emit (events.js:185:7)
+324 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+324 verbose stack     at emitTwo (events.js:100:13)
+324 verbose stack     at ChildProcess.emit (events.js:185:7)
+324 verbose stack     at maybeClose (internal/child_process.js:850:16)
+324 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+325 verbose pkgid mraa@0.7.5
+326 verbose cwd /Users/sahays/how-to-code-samples/air-quality-sensor/javascript
+327 error Darwin 15.4.0
+328 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+329 error node v5.10.0
+330 error npm  v3.8.3
+331 error code ELIFECYCLE
+332 error mraa@0.7.5 install: `node-gyp rebuild`
+332 error Exit status 1
+333 error Failed at the mraa@0.7.5 install script 'node-gyp rebuild'.
+333 error Make sure you have the latest version of node.js and npm installed.
+333 error If you do, this is most likely a problem with the mraa package,
+333 error not with npm itself.
+333 error Tell the author that this fails on your system:
+333 error     node-gyp rebuild
+333 error You can get information on how to open an issue for this project with:
+333 error     npm bugs mraa
+333 error Or if that isn't available, you can get their info via:
+333 error     npm owner ls mraa
+333 error There is likely additional logging output above.
+334 verbose exit [ 1, true ]
