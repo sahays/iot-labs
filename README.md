@@ -30,7 +30,7 @@ make
 make install  
 ```
 
-## install root CA certificate
+## get root CA certificate
 ```
 curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem > ~/aws_certs/rootCA.pem
 ```
@@ -40,3 +40,31 @@ curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-C
 npm install aws-sdk
 npm install aws-iot-device-sdk
 ```
+
+## create client certificates for AWS IoT
+```
+http://docs.aws.amazon.com/iot/latest/developerguide/secure-communication.html
+```
+
+## Intel Edison
+### drivers
+```
+https://software.intel.com/en-us/iot/hardware/edison/downloads
+```
+
+### code samples
+```
+https://software.intel.com/en-us/blogs/2015/11/04/announcing-18-new-how-to-intel-iot-code-samples
+```
+
+### prepare for AWS IoT
+```
+$ curl https://bootstrap.pypa.io/ez_setup.py -o - | python
+$ easy_install pip
+$ pip install awscli
+```
+then
+```
+aws configure 
+```
+
