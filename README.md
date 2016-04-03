@@ -9,9 +9,8 @@ npm install
 ```
 
 ## reset to stock Yokto Linux
-```
 https://software.intel.com/en-us/flashing-firmware-on-your-intel-edison-board-mac-os-x
-```
+
 
 ## upgrade node
 ### opkg commands
@@ -42,20 +41,16 @@ npm install aws-iot-device-sdk
 ```
 
 ## create client certificates for AWS IoT
-```
 http://docs.aws.amazon.com/iot/latest/developerguide/secure-communication.html
-```
+
 
 ## Intel Edison
 ### drivers
-```
 https://software.intel.com/en-us/iot/hardware/edison/downloads
-```
+
 
 ### code samples
-```
 https://software.intel.com/en-us/blogs/2015/11/04/announcing-18-new-how-to-intel-iot-code-samples
-```
 
 ### prepare for AWS IoT
 ```
