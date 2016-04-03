@@ -1,12 +1,13 @@
 var awsIot = require('aws-iot-device-sdk');
 var device = awsIot.device({
-  "host": "A2AKOYC5UU155B.iot.us-east-1.amazonaws.com",
+  "host": "A2AKOYC5UU155B.iot.eu-west-1.amazonaws.com",
   "port": 8883,
-  "clientId": "heat-sensor",
-  "thingName": "heat-sensor",
-  "caCert": "./rootCA.pem",
-  "clientCert": "./24f6d7c60e-certificate.pem.crt",
-  "privateKey": "./24f6d7c60e-private.pem.key"
+  "clientId": "demo-iot",
+  "thingName": "demo-iot",
+  "caCert": "rootCA.pem",
+  "clientCert": "65deea1442-certificate.pem.crt",
+  "privateKey": "65deea1442-private.pem.key",
+  "region": "eu-west-1"
 });
 var message = {
   val1: "Value 1",
@@ -17,7 +18,7 @@ var message = {
 device.on('connect', function() {
   console.log('Connected!');
   setTimeout(function() {
-    device.publish('PubSubToAnyTopic', JSON.stringify(message));
+    device.publish('demo-iot', JSON.stringify(message));
     console.log('Pushed message to Topic...');
     console.log('Success!');
     process.exit();
